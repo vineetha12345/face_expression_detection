@@ -1,0 +1,47 @@
+{% load static %}
+<html>
+<head>
+  <title>RESULT</title>
+  <style>
+.container {
+  position: relative;
+  text-align: center;
+  color:black;
+}
+.v1 {
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left:35%;
+}
+.v2 {
+margin: 0;
+position: absolute;
+top: 20%;
+left:40%;
+}
+.v3 {
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left:39%;
+}
+  </style>
+</head>
+<body >
+  <div class="container">
+    <img src="{% static 'result.jpg' %}" height="700" width="1500"/>
+  </div>
+  <div class="v1">
+    <p style="font-size: 30px; font-style:italic;">Sorry! Not able to predict this image</p>
+  </div>
+  <div class="v2">
+  {% load static %}
+  <img src="{% static 'capture.jpg'%}" height="400" width="300" />
+</div>
+  <div class="v3">
+    <p style="font-size: 30px; font-style:italic;">Please upload another image</p>
+  </div>
+</body>
+
+</html>
